@@ -7,6 +7,8 @@ import Footer from './components/Footer/Footer'
 import DealerLocator from './components/DealerLocator/DealerLocator'
 import {BrowserRouter as Router, Route } from 'react-router-dom'
 import TestFlightForm from './components/TestFlightForm/TestFlightForm'
+import VehicleDetail from './components/VehicleDetail/VehicleDetail'
+import BuildAndPrice from './components/BuildAndPrice/BuildAndPrice';
 
 class App extends Component {
 
@@ -36,6 +38,8 @@ class App extends Component {
               <Route exact path='/' render={(props) => <Home {...props} vehicleData={this.state.vehicleData} />} />
               <Route path='/find-a-dealer' component={DealerLocator} />
               <Route path='/schedule-test-flight' component={TestFlightForm} />
+              <Route path='/detail/:selectedVehicle' render={(props) => <VehicleDetail {...props} vehicleData={this.state.vehicleData} />} />
+              <Route path='/build-and-price' render={(props)=><BuildAndPrice {...props} vehicleData={this.state.vehicleData} />} />
             </div>
             <Footer />
           </div>

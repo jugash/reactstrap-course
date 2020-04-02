@@ -110,7 +110,7 @@ module.exports = function(){
             modelYear: "2018",
             thumbnail: "/images/thumbnails/mercury/mercury-white-thumbnails00.jpg",
             colors: [
-                ["White Dwarf", "/images/thumbnails/mercury-white.jpg", "white"]
+                ["White Dwarf", "/images/thumbnails/mercury/mercury-white-thumbnails00.jpg", "white"]
             ],
             carouselImage: "/images/carousel/mercury-01.jpg",
             altText: "Mercury Spacefaring Commercial Transport",
